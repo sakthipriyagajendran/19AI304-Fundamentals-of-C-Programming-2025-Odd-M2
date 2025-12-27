@@ -92,8 +92,8 @@ int main()
 }
 
 # Output:
-Average Marks = 84.33
-Grade: B
+![WhatsApp Image 2025-12-27 at 11 30 15 AM](https://github.com/user-attachments/assets/03f1d7bb-9913-4baa-a238-9ce3432b2d9a)
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -143,17 +143,8 @@ int main()
 }
 
 # Output:
-Multiplication Table of 15:
-15 x 1 = 15
-15 x 2 = 30
-15 x 3 = 45
-15 x 4 = 60
-15 x 5 = 75
-15 x 6 = 90
-15 x 7 = 105
-15 x 8 = 120
-15 x 9 = 135
-15 x 10 = 150
+<img width="1473" height="482" alt="image" src="https://github.com/user-attachments/assets/bc0eea83-a105-469a-9ed1-5fb414af1718" />
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -198,38 +189,34 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 #include <stdio.h>
+#include <stdbool.h>
 
-int main()
-{
-    int num=7, i, flag = 1;
+int main() {
+    int num, i;
+    bool isPrime = true;
+    printf("Enter a number: ");
     scanf("%d", &num);
-
-    if (num <= 1)
-    {
-        flag = 0;
-    }
-    else
-    {
-        for (i = 2; i <= num / 2; i++)
-        {
-            if (num % i == 0)
-            {
-                flag = 0;
+    if (num <= 1) {
+        isPrime = false; 
+    } else {
+        for (i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                isPrime = false;
                 break;
             }
         }
     }
 
-    if (flag == 1)
-        printf("%d is a Prime number\n", num);
+    if (isPrime)
+        printf("%d is a prime number.\n", num);
     else
-        printf("%d is not a Prime number\n", num);
+        printf("%d is not a prime number.\n", num);
 
     return 0;
 }
-
 # Output:
-7 is a Prime number
+<img width="510" height="232" alt="image" src="https://github.com/user-attachments/assets/2857aeca-2e2d-41d8-9f90-b537776d3700" />
+
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
@@ -278,34 +265,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int i, j;
-
-    for (i = 1; i <= 5; i++)
-        printf("%d", i);
-    printf("\n");
-    for (i = 2; i <= 4; i++)
-    {
-        printf("%d", i);
-        for (j = 1; j <= 3; j++)
+    int N,row,col;
+    scanf("%d",&N);
+    for(row=1;row<=N;row++){
+        for(col=1;col<=N;col++){
+            if(row==1)
+            printf("%d",col);
+            else if(col==1)
+            printf("%d",row);
+            else if(row==N)
+            printf("%d",N-col+1);
+            else if(col==N)
+            printf("%d",N-row+1);
+            else
             printf(" ");
-        printf("%d\n", 6 - i);
+        }
+        printf("\n");
     }
-    for (i = 5; i >= 1; i--)
-        printf("%d", i);
-
     return 0;
+    
 }
-
 # Output:
-12345
-2   4
-3   3
-4   2
-54321
+<img width="546" height="277" alt="image" src="https://github.com/user-attachments/assets/8e8d4a35-f4b9-48f7-9720-b709f08cd39c" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -379,21 +364,8 @@ int main()
     return 0;
 }
 # Output:
-0
+<img width="1325" height="587" alt="image" src="https://github.com/user-attachments/assets/548706fd-e91c-4b84-84e1-bc3b1956ba30" />
 
-7  0  7  
-
-6  7  0  7  6  
-
-5  6  7  0  7  6  5  
-
-4  5  6  7  0  7  6  5  4  
-
-3  4  5  6  7  0  7  6  5  4  3  
-
-2  3  4  5  6  7  0  7  6  5  4  3  2  
-
-1  2  3  4  5  6  7  0  7  6  5  4  3  2  1 
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
