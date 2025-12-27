@@ -58,33 +58,19 @@
 # Program:
 #include <stdio.h>
 
-int main()
-{
-    float math=85, science=78, english=90, average;
+int main() {
+    float math, science, english, average;
+    printf("Enter marks for Math, Science, and English: ");
     scanf("%f %f %f", &math, &science, &english);
-
     average = (math + science + english) / 3.0;
-
-    printf("Average Marks = %.2f\n", average);
-
-    if (average >= 90.0)
-    {
+    printf("Average marks: %.2f\n", average);
+    if (average >= 90.0f) {
         printf("Grade: A\n");
-    }
-    else if (average >= 80.0)
-    {
+    } else if (average >= 75.0f && average < 90.0f) {
         printf("Grade: B\n");
-    }
-    else if (average >= 70.0)
-    {
+    } else if (average >= 50.0f && average < 75.0f) {
         printf("Grade: C\n");
-    }
-    else if (average >= 60.0)
-    {
-        printf("Grade: D\n");
-    }
-    else
-    {
+    } else {
         printf("Grade: F\n");
     }
 
@@ -92,7 +78,7 @@ int main()
 }
 
 # Output:
-![WhatsApp Image 2025-12-27 at 11 30 15 AM](https://github.com/user-attachments/assets/03f1d7bb-9913-4baa-a238-9ce3432b2d9a)
+<img width="592" height="280" alt="image" src="https://github.com/user-attachments/assets/c829ad0e-dbec-466b-a1d7-e2d6d6e5e6d7" />
 
 
 # Result: 
